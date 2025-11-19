@@ -112,38 +112,63 @@ It includes a full authentication system, roles, categories management, image up
 | Images   | `move_uploaded_file()` + `unlink()` |
 
 
-
 ### 📁 Project Structure
 ```pgsql
-bookmood/
-│
-├── actions/
-│   ├── login.php
-│   ├── logout.php
-│   ├── register.php
-│   ├── save-entry.php
-│   ├── remove-entry.php
-│   ├── save-category.php
-│   ├── remove-category.php
-│
-├── assets/
-│   └── img/
-│       └── (uploaded covers)
-│
-├── includes/
-│   ├── connection.php
-│   ├── header.php
-│   ├── sidebar.php
-│   ├── footer.php
-│   ├── helpers.php
-│
-├── create_entry.php
-├── edit_categories.php
-├── remove_users.php
-├── modify_mydata.php
-├── index.php
-├── entry.php
-└── search.php
+📦bookmood
+ ┣ 📂actions
+ ┃ ┣ 📜login.php
+ ┃ ┣ 📜logout.php
+ ┃ ┣ 📜register.php
+ ┃ ┣ 📜remove-category.php
+ ┃ ┣ 📜remove-entry.php
+ ┃ ┣ 📜remove-user.php
+ ┃ ┣ 📜save-category.php
+ ┃ ┣ 📜save-entry.php
+ ┃ ┗ 📜update-user.php
+ ┣ 📂assets
+ ┃ ┣ 📂css
+ ┃ ┃ ┗ 📜style.css
+ ┃ ┣ 📂fonts
+ ┃ ┃ ┣ 📂lora-4
+ ┃ ┃ ┃ ┣ 📜Lora-Italic.ttf
+ ┃ ┃ ┃ ┗ 📜Lora-Regular.ttf
+ ┃ ┃ ┣ 📂montserrat
+ ┃ ┃ ┃ ┣ 📜Montserrat-Medium.ttf
+ ┃ ┃ ┃ ┗ 📜Montserrat-SemiBold.ttf
+ ┃ ┃ ┗ 📂playfair-display
+ ┃ ┃ ┃ ┣ 📜PlayfairDisplay-Bold.ttf
+ ┃ ┃ ┃ ┗ 📜PlayfairDisplay-SemiBold.ttf
+ ┃ ┣ 📂img
+ ┃ ┃ ┗ 📜register.png
+ ┃ ┗ 📂sql
+ ┃ ┃ ┣ 📜admin.sql
+ ┃ ┃ ┗ 📜database.sql
+ ┣ 📂includes
+ ┃ ┣ 📜connection.php
+ ┃ ┣ 📜footer.php
+ ┃ ┣ 📜header.php
+ ┃ ┣ 📜helpers.php
+ ┃ ┣ 📜redirect.php
+ ┃ ┗ 📜sidebar.php
+ ┣ 📂nbproject
+ ┃ ┣ 📂private
+ ┃ ┃ ┣ 📜private.properties
+ ┃ ┃ ┗ 📜private.xml
+ ┃ ┣ 📜project.properties
+ ┃ ┗ 📜project.xml
+ ┣ 📜.gitignore
+ ┣ 📜category.php
+ ┣ 📜create_entry.php
+ ┣ 📜edit_categories.php
+ ┣ 📜edit_entry.php
+ ┣ 📜entries.php
+ ┣ 📜entry.php
+ ┣ 📜index.php
+ ┣ 📜modify_mydata.php
+ ┣ 📜myentries.php
+ ┣ 📜README.md
+ ┣ 📜remove_users.php
+ ┗ 📜search.php
 ```
 
 ## ⚙️ Installation
