@@ -1,434 +1,444 @@
 /* --- ------------------- FONTS ------------------- --- */
 @font-face {
-    font-family: "playfair-display-semibold";
-    src: url(../fonts/playfair-display/PlayfairDisplay-SemiBold.ttf);
-    font-weight: 600;
-    font-style: normal;
+  font-family: 'playfair-display-semibold';
+  src: url(../fonts/playfair-display/PlayfairDisplay-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
 }
 @font-face {
-    font-family: "playfair-display-bold";
-    src: url(../fonts/playfair-display/PlayfairDisplay-Bold.ttf);
-    font-weight: 700;
-    font-style: normal;
+  font-family: 'playfair-display-bold';
+  src: url(../fonts/playfair-display/PlayfairDisplay-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "montserrat-semibold";
-    src: url(../fonts/montserrat/Montserrat-SemiBold.ttf);
-    font-weight: 600;
-    font-style: normal;
+  font-family: 'montserrat-semibold';
+  src: url(../fonts/montserrat/Montserrat-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
 }
 @font-face {
-    font-family: "montserrat-medium";
-    src: url(../fonts/montserrat/Montserrat-Medium.ttf);
-    font-weight: 500;
-    font-style: normal;
+  font-family: 'montserrat-medium';
+  src: url(../fonts/montserrat/Montserrat-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "lora-italic";
-    src: url(../fonts/lora-4/Lora-Italic.ttf);
-    font-weight: 400;
-    font-style: italic;
+  font-family: 'lora-italic';
+  src: url(../fonts/lora-4/Lora-Italic.ttf);
+  font-weight: 400;
+  font-style: italic;
 }
 @font-face {
-    font-family: "lora";
-    src: url(../fonts/lora-4/Lora-Regular.ttf);
-    font-weight: 400;
-    font-style: normal;
+  font-family: 'lora';
+  src: url(../fonts/lora-4/Lora-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
 }
-
 
 /* --- ------------------- ROOT ------------------- --- */
 * {
-    margin: 0px;
-    padding: 0px;
-    text-decoration: none;
-    font-family: "lora";
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-family: 'lora';
 }
 
 .hover-underline {
-    font-size: 2rem;
-    color: #ffffff;
-    position: relative;
-    display: inline-block;
+  font-size: 2rem;
+  color: #ffffff;
+  position: relative;
+  display: inline-block;
 }
 
 .hover-underline::after,
 .hover-underline::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(to right, #A6B37D, #8B5E3C);
-    bottom: -5px;
-    left: 0;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.5s ease-out;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #a6b37d, #8b5e3c);
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease-out;
 }
 
 .hover-underline::before {
-    top: -5px;
-    transform-origin: left;
+  top: -5px;
+  transform-origin: left;
 }
 
 .hover-underline:hover::after,
 .hover-underline:hover::before {
-    transform: scaleX(1);
+  transform: scaleX(1);
 }
-
 
 h1 {
-    font-family: "playfair-display-bold" !important;
-    text-transform: uppercase;
+  font-family: 'playfair-display-bold' !important;
+  text-transform: uppercase;
 }
 
-h1, h2 {
-    color: #2E2E2E !important;
+h1,
+h2 {
+  color: #2e2e2e !important;
 }
 
-h2,h3 {
-    font-family: "playfair-display-semibold" !important;
+h2,
+h3 {
+  font-family: 'playfair-display-semibold' !important;
 }
 
-p, label, input {
-    font-family: lora !important;
+p,
+label,
+input {
+  font-family: lora !important;
 }
 
 a {
-    color: #6E7C7C;
+  color: #6e7c7c;
 }
 
 a:hover {
-    color: #4F6F6F;
+  color: #4f6f6f;
 }
 
-a, button, nav, input[type="submit"], input[type="button"] {
-    font-family: "montserrat-semibold" !important;
+a,
+button,
+nav,
+input[type='submit'],
+input[type='button'] {
+  font-family: 'montserrat-semibold' !important;
 }
 
 span {
-    color: #4e4e4e;
-    margin-top: 5px;
-    font-size: 14px;
-    font-family: "lora-italic";
+  color: #4e4e4e;
+  margin-top: 5px;
+  font-size: 14px;
+  font-family: 'lora-italic';
 }
 
 select {
-    display: inline-block;
-    width: auto;
-    padding: 8px;
-    font-size: 16px;
-    margin-right: 3px;
+  display: inline-block;
+  width: auto;
+  padding: 8px;
+  font-size: 16px;
+  margin-right: 3px;
 }
 
 article {
-    transition: all 0.5s ease;
-    margin-top: 20px;
+  transition: all 0.5s ease;
+  margin-top: 20px;
 }
 
 article:hover {
-    transform: scale(1.02);
-    background: #f4f6ef;
-    border-radius: 5px;
+  transform: scale(1.02);
+  background: #f4f6ef;
+  border-radius: 5px;
 }
 
 table {
-    margin: 0 auto;
-    width: 90%;
+  margin: 0 auto;
+  width: 90%;
 }
 
-thead{
-    background-color: #8B5E3C;
-    color: white;
-    pointer-events: none;
+thead {
+  background-color: #8b5e3c;
+  color: white;
+  pointer-events: none;
 }
 
 tr:hover {
-    background-color: #f4f6ef;
+  background-color: #f4f6ef;
 }
 
 /* --- ------------------- BODY ------------------- --- */
 .clearfix {
-    clear: both;
-    float: none;
+  clear: both;
+  float: none;
 }
 
 body {
-    /*background: url(../img/green.avif) #F4F4F4;*/
-    background-color: #FAF7F2;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+  /*background: url(../img/green.avif) #F4F4F4;*/
+  background-color: #faf7f2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 /* --- ------------------- HEADER ------------------- --- */
 #header {
-    width: 85%;
-    height: auto;
-    background: transparent;
-    margin: 0 auto;
+  width: 85%;
+  height: auto;
+  background: transparent;
+  margin: 0 auto;
 }
 
 /* --- ------------------- LOGO ------------------- --- */
 #logo {
-    text-align: center;
-    width: 85%;
-    height: auto;
-    margin: 0 auto;
+  text-align: center;
+  width: 85%;
+  height: auto;
+  margin: 0 auto;
 }
 
-#logo a{
-    font-family: "playfair-display-bold";
-    font-size: 40px;
-    letter-spacing: 2px;
-    color: #8B5E3C;
-    text-shadow: 0px 0px 0px #8B5E3C, 1px 1px 0px black, 2px 2px 0px #8B5E3C;
-    transition: all 500ms;
-    line-height: 90px;
-    margin-left: 10px;
+#logo a {
+  font-family: 'playfair-display-bold';
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: #8b5e3c;
+  text-shadow: 0px 0px 0px #8b5e3c, 1px 1px 0px black, 2px 2px 0px #8b5e3c;
+  transition: all 500ms;
+  line-height: 90px;
+  margin-left: 10px;
 }
 
 #logo a:hover {
-    cursor: pointer;
-    text-shadow: 0px 0px 0px #A6B37D, -1px -1px 0px black, -2px -2px 0px #A6B37D; /*makes the text seem 3d*/
-    color: #A6B37D;
+  cursor: pointer;
+  text-shadow: 0px 0px 0px #a6b37d, -1px -1px 0px black, -2px -2px 0px #a6b37d; /*makes the text seem 3d*/
+  color: #a6b37d;
 }
 
 /* --- ------------------- MENU ------------------- --- */
 #menu {
-    clear: both;
-    width: 100%;
-    height: 45px;
-    background: #FFFFFF;
-    border: 1px solid #C9C9C9;
-    border-radius: 8px;
-    box-shadow: 0px 1px 1px #E6E0D8;
-    overflow: hidden;
+  clear: both;
+  width: 100%;
+  height: 45px;
+  background: #ffffff;
+  border: 1px solid #c9c9c9;
+  border-radius: 8px;
+  box-shadow: 0px 1px 1px #e6e0d8;
+  overflow: hidden;
 }
 
 #menu ul {
-    list-style: none;
+  list-style: none;
 }
 
 #menu ul li {
-    float: left;
-    line-height: 44px;
-    border-right: 1px solid #D6D6D6;
+  float: left;
+  line-height: 44px;
+  border-right: 1px solid #d6d6d6;
 }
 
 #menu ul li a {
-    display: block;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 18px;
-    color: #2E2E2E;
-    transition: all 0.5s ease;
-    text-align: center;
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 18px;
+  color: #2e2e2e;
+  transition: all 0.5s ease;
+  text-align: center;
 }
 
 #menu ul li a:hover {
-    background: linear-gradient(to bottom, #f4f6ef 0px, #f4f6ef 100%);
-    transform: scale(1.15);
+  background: linear-gradient(to bottom, #f4f6ef 0px, #f4f6ef 100%);
+  transform: scale(1.15);
 }
 
 /* --- ------------------- CONTAINER ------------------- --- */
 #container {
-    width: 85%;
-    height: auto;
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+  width: 85%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-
 
 /* --- ------------------- SIDEBAR ------------------- --- */
 #sidebar {
-    float: right;
-    width: 25%;
-    height: auto;
-    margin-right: 25px;
+  float: right;
+  width: 25%;
+  height: auto;
+  margin-right: 25px;
 }
 
 .sidebar-block {
-    display: block;
-    width: 95%;
-    margin: 0 auto;
-    margin-bottom: 25px;
-    background: white;
-    padding: 15px;
-    box-shadow: 0px 0px 1px rgba(0,0,0,0.3), 0px 3px 7px rgba(0,0,0,0.3), 0px 0px 1px #fff inset, 0px -3px 2px rgba(0,0,0,0.25) inset;
+  display: block;
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  background: white;
+  padding: 15px;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.3),
+    0px 0px 1px #fff inset, 0px -3px 2px rgba(0, 0, 0, 0.25) inset;
 }
 
 .sidebar-block h3 {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 label,
-input[type="text"], input[type="email"], input[type="password"] {
-    display: block;
-    width: 95%;
-    margin-top: 2px;
-    margin-bottom: 2px;
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+  display: block;
+  width: 95%;
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 
-input[type="text"], input[type="email"], input[type="password"] {
-    padding: 8px;
-    font-size: 16px;
-    margin-bottom: 10px;
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+  padding: 8px;
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
 /* --- ------------------- BUTTON ------------------- --- */
-input[type="button"],
-input[type="submit"],
+input[type='button'],
+input[type='submit'],
 .button {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    display: block;
-    border-radius: 2px;
-    cursor: pointer;
-    padding: 7px;
-    width: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: block;
+  border-radius: 2px;
+  cursor: pointer;
+  padding: 7px;
+  width: auto;
 }
 
 .button {
-    text-align: center;
-    width: auto;
-    transition: all 0.5s ease;
-    text-transform: uppercase;
-    font-size: 16px;
-    padding: 10px;
+  text-align: center;
+  width: auto;
+  transition: all 0.5s ease;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 10px;
 }
 
 .button-primary {
-    background: #A6B37D;
-    color: #FFFFFF;
-    border: none;
-    text-align: center;
+  background: #a6b37d;
+  color: #ffffff;
+  border: none;
+  text-align: center;
 }
 .button-primary:hover {
-    background: #8B5E3C;
-    color: #FFFFFF !important;
-    transform: scale(1.05);
-    letter-spacing: 2px;
+  background: #8b5e3c;
+  color: #ffffff !important;
+  transform: scale(1.05);
+  letter-spacing: 2px;
 }
 
 .button-secondary {
-    background: transparent;
-    color: #8B5E3C;
-    border: 1px solid #A6B37D;
+  background: transparent;
+  color: #8b5e3c;
+  border: 1px solid #a6b37d;
 }
 .button-secondary:hover {
-    background: #A6B37D;
-    color: #FFFFFF !important;
-    transform: scale(1.05);
-    letter-spacing: 2px;
+  background: #a6b37d;
+  color: #ffffff !important;
+  transform: scale(1.05);
+  letter-spacing: 2px;
 }
 
 .alert {
-    text-align: center;
-    padding: 5px;
-    font-size: 14px;
-    color: white;
-    box-shadow: 0px 1px 3px #ccc;
-    margin-top: 25px;
-    margin-bottom: 15px;
-    border-radius: 2px;
-    font-size: 16px;
-    width: auto;
+  text-align: center;
+  padding: 5px;
+  font-size: 14px;
+  color: white;
+  box-shadow: 0px 1px 3px #ccc;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  border-radius: 2px;
+  font-size: 16px;
+  width: auto;
 }
 
 .alert-error {
-    background: red;
+  background: red;
 }
 
-.alert-success{
-    background-color: green;
+.alert-success {
+  background-color: green;
 }
 
 /* --- ------------------- MAIN ------------------- --- */
 #main {
-    float: left;
-    width: 65%;
-    min-height: 740px;
-    background: white;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px #ccc;
-    margin-left: 20px; /* may change it to 0 */
-    padding: 20px;
-    overflow: hidden;
+  float: left;
+  width: 65%;
+  min-height: 780px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #ccc;
+  margin-left: 20px; /* may change it to 0 */
+  padding: 20px;
+  overflow: hidden;
 }
 
 #main a {
-    color: #333;
+  color: #333;
 }
 
 .up {
-    transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .up:hover {
-    transform: scale(1.15);
-    transform-origin: left;
+  transform: scale(1.15);
+  transform-origin: left;
 }
 
 #main h1 {
-    font-size: 32px;
-    letter-spacing: 1px;
+  font-size: 32px;
+  letter-spacing: 1px;
 }
 
 #main h2 {
-    font-size: 20px;
-    letter-spacing: 1px;
-    margin-top: 8px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-top: 8px;
 }
 
 #main p {
-    margin-top: 8px;
-    line-height: 1.7;
-    color: #555555;
+  margin-top: 8px;
+  line-height: 1.7;
+  color: #555555;
 }
 
 article {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 article img {
-    float: left;
-    width: 100px;
-    height: 140px;
-    margin-right: 20px;
-    border-radius: 8px;
+  float: left;
+  width: 100px;
+  height: 140px;
+  margin-right: 20px;
+  border-radius: 8px;
 }
 
 article a {
-    display: block;
-    text-decoration: none;
-    color: inherit;
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }
 
 #show-all a {
-    display: block;
-    border-radius: 2px;
-    padding: 10px;
-    cursor: pointer;
-    width: 160px;
-    margin: 0 auto;
-    margin-top: 25px;
+  display: block;
+  border-radius: 2px;
+  padding: 10px;
+  cursor: pointer;
+  width: 160px;
+  margin: 0 auto;
+  margin-top: 25px;
 }
 
 /* --- ------------------- FOOTER ------------------- --- */
 #footer {
-    clear: both;
-    width: 20%;
-    margin: 0 auto;
-    background: #8B5E3C;
-    border: 1px solid #c9c9c9;
-    border-bottom: none;
-    border-radius: 8px 8px 0px 0px;
-    color: #FAF7F2;
-    height: auto;
-    padding: 15px;
-    text-align: center;
+  clear: both;
+  width: 20%;
+  margin: 0 auto;
+  background: #8b5e3c;
+  border: 1px solid #c9c9c9;
+  border-bottom: none;
+  border-radius: 8px 8px 0px 0px;
+  color: #faf7f2;
+  height: auto;
+  padding: 15px;
+  text-align: center;
 }
